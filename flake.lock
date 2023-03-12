@@ -1,0 +1,125 @@
+{
+  "nodes": {
+    "beamer-mtheme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1533142502,
+        "narHash": "sha256-1HptXntlCUtXwhKuenuVjsj4K3oK5eOsNPZ9+nwSczg=",
+        "owner": "matze",
+        "repo": "mtheme",
+        "rev": "2fa6084b9d34fec9d2d5470eb9a17d0bf712b6c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "matze",
+        "repo": "mtheme",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1676283394,
+        "narHash": "sha256-XX2f9c3iySLCw54rJ/CZs+ZK6IQy7GXNY4nSOyu2QG4=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "3db36a8b464d0c4532ba1c7dda728f4576d6d073",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-utils",
+        "type": "indirect"
+      }
+    },
+    "nix-pandoc": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1669659805,
+        "narHash": "sha256-8Kzx+MJY0YjLAu5pt/DhFNMN+PybQZW2Jqe9lr23SQA=",
+        "owner": "serokell",
+        "repo": "nix-pandoc",
+        "rev": "8e8c13e59ad40e28c1d91b2bc532e3125ff6de49",
+        "type": "github"
+      },
+      "original": {
+        "owner": "serokell",
+        "repo": "nix-pandoc",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1667318090,
+        "narHash": "sha256-AvxgT+t1BWZs8IfdseHl8+7wvWWm9pvysupMT9wXdH0=",
+        "owner": "serokell",
+        "repo": "nixpkgs",
+        "rev": "4bce79cf151aad3c0bed46a32bdb4b165f00cb7e",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1678201391,
+        "narHash": "sha256-dX4z2oSJ5UKzY5wb5HX2VaPP08DPWZ6B7EHzOJfP7GM=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "c707238dc262923da5a53a5a11914117caac07a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pandoc-lua-filters": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1674922902,
+        "narHash": "sha256-ycLKt63iSMnqS1i8SUWnpXCpVR3lBOBsEevOTvbJ6BE=",
+        "owner": "pandoc",
+        "repo": "lua-filters",
+        "rev": "40a1a0b6e3c5b3347aaecb0ad697368e16289f86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pandoc",
+        "repo": "lua-filters",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "beamer-mtheme": "beamer-mtheme",
+        "flake-utils": "flake-utils",
+        "nix-pandoc": "nix-pandoc",
+        "nixpkgs": "nixpkgs_2",
+        "pandoc-lua-filters": "pandoc-lua-filters"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
